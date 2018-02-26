@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: Fone Dynamics Pty Ltd
+Build-Jdk: 1.7.0_80
+Name: FoneDynamics
+Specification-Title: Fone Dynamics Java Client Library
+Specification-Version: 1.0
+Specification-Vendor: Fone Dynamics Pty Ltd
+Implementation-Title: Fone Dynamics Java Client Library
+Implementation-Version: 1.0
+Implementation-Vendor: Fone Dynamics Pty Ltd
