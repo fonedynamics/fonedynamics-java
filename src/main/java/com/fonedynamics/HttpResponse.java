@@ -1,4 +1,4 @@
-package au.com.fonedynamics;
+package com.fonedynamics;
 
 /** 
  Represents the response from a HTTP request.

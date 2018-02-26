@@ -1,4 +1,4 @@
-package au.com.fonedynamics;
+package com.fonedynamics;
 
 /** 
  The response to a Message request.

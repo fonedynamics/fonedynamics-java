@@ -1,4 +1,4 @@
-package au.com.fonedynamics;
+package com.fonedynamics;
 
 import java.util.ArrayList;
 import java.util.List;
