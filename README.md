@@ -71,16 +71,9 @@ To send a batch of messages, use the overload of `MessageResource.Send()` that a
 
 ```java
 // construct and messages
-List<MessageResource> messages = new List<MessageResource>()
-{
-    new MessageResource("+61499999999", from: "FDX", text: "and a one"),
-    new MessageResource("+61499999999", from: "FDX", text: "and a two"),
-    new MessageResource("+61499999999", from: "FDX", text: "and a one, two, three!")
-};
-
 ArrayList<MessageResource> messages = new ArrayList<MessageResource>();
 
-MessageResource msg1 = new MessageResource("+61499999999", "FDX",  "and a one");
+MessageResource msg1 = new MessageResource("+61499999999", "FDX", "and a one");
 MessageResource msg2 = new MessageResource("+61499999999", "FDX", "and a two");
 MessageResource msg3 = new MessageResource("+61499999999", "FDX", "and a one, two, three!");
 
