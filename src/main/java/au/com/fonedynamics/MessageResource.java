@@ -494,11 +494,11 @@ public class MessageResource {
      @return The MessageResource that was sent, or an exception on failure.
      * @throws java.io.IOException
     */
-    public static MessageResource Send(
+    public static MessageResource send(
         MessageResource message,
         FoneDynamicsClient fdxClient) throws IOException
     {
-        return Send(message, fdxClient.getDefaultPropertySid(), fdxClient);
+        return send(message, fdxClient.getDefaultPropertySid(), fdxClient);
     }
         
     /** 
@@ -514,7 +514,7 @@ public class MessageResource {
      @return The MessageResource that was sent, or an exception on failure.
      * @throws java.io.IOException
     */
-    public static MessageResource Send(
+    public static MessageResource send(
         MessageResource message,
         String propertySid,
         FoneDynamicsClient fdxClient) throws IOException
@@ -566,7 +566,7 @@ public class MessageResource {
         @return The MessageResource that was sent, or an exception on failure.
         @throws java.io.IOException
     */
-    public static MessageResource Get(
+    public static MessageResource get(
             String messageSid,
             FoneDynamicsClient fdxClient)  throws IOException
         {

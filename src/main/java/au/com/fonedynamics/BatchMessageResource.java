@@ -148,11 +148,11 @@ public class BatchMessageResource extends MessageResource
      @return The MessageResource that was sent, or an exception on failure.
      @throws java.io.IOException
     */
-    public static List<BatchMessageResource> Send(
+    public static List<BatchMessageResource> send(
             Iterable<MessageResource> messages,
             FoneDynamicsClient fdxClient) throws IOException
     {
-        return Send(messages, fdxClient.getDefaultPropertySid(), fdxClient);
+        return send(messages, fdxClient.getDefaultPropertySid(), fdxClient);
     }
     
     /** 
@@ -169,7 +169,7 @@ public class BatchMessageResource extends MessageResource
      @return The MessageResource that was sent, or an exception on failure.
      @throws java.io.IOException
     */
-    public static List<BatchMessageResource> Send(
+    public static List<BatchMessageResource> send(
             Iterable<MessageResource> messages,
             String propertySid,
             FoneDynamicsClient fdxClient) throws IOException
