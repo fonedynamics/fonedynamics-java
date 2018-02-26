@@ -1,10 +1,11 @@
 # Fone Dynamics Client Library for Java
 
-.JDK 1.7 client library for [Fone Dynamics](https://www.fonedynamics.com/) services.  This library currently supports messaging only.
+JDK 1.7 client library for [Fone Dynamics](https://www.fonedynamics.com/) services.  This library currently supports messaging only.
 
 ## Installing the Fone Dynamics Client Library for Java
 
 Please download the jar file via this Url:
+https://goo.gl/H93Z6E
 
 It will be available via the Central Repository very soon.
 
