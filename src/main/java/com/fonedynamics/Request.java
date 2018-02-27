@@ -1,4 +1,4 @@
-package au.com.fonedynamics;
+package com.fonedynamics;
 
 import java.net.URI;
 import java.net.URISyntaxException;

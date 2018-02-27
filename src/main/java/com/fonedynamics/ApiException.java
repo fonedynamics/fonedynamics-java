@@ -1,4 +1,4 @@
-package au.com.fonedynamics;
+package com.fonedynamics;
 
 /** 
  Represents an exception that occurred during an API request.

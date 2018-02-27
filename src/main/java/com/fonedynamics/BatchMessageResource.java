@@ -1,4 +1,4 @@
-package au.com.fonedynamics;
+package com.fonedynamics;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
