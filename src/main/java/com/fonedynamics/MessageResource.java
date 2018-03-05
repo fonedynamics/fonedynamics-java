@@ -9,12 +9,12 @@ import java.io.IOException;
 */
 public class MessageResource {
     
-    // The account secure identifier associated with the message.
+    // The message secure identifier associated with the message.
     private String MessageSid;
 
     /** 
-     Get the account secure identifier associated with the message.
-     * @return The account secure identifier associated with the message.
+     Get the message secure identifier associated with the message.
+     * @return The message secure identifier associated with the message.
     */
     public final String getMessageSid()
     {
@@ -24,7 +24,39 @@ public class MessageResource {
     {
         MessageSid = value;
     }
+    
+    // The account secure identifier associated with the message.
+    private String AccountSid;
 
+    /** 
+     Get the account secure identifier associated with the message.
+     * @return The account secure identifier associated with the message.
+    */
+    public final String getAccountSid()
+    {
+        return AccountSid;
+    }
+    final void setAccountSid(String value)
+    {
+        AccountSid = value;
+    }
+
+    // The property secure identifier associated with the message.
+    private String PropertySid;
+    
+    /** 
+     Get the property secure identifier associated with the message.
+     * @return The property secure identifier associated with the message.
+    */
+    public final String getPropertySid()
+    {
+        return PropertySid;
+    }
+    final void setPropertySid(String value)
+    {
+        PropertySid = value;
+    }
+    
     // The alphanumeric or E164 formatted sender ID of the message.
     private String From;
 

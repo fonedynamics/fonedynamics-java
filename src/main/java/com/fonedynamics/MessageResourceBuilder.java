@@ -23,6 +23,7 @@ public class MessageResourceBuilder {
      * Constructs a MessageResourceBuilder
     */
     public MessageResourceBuilder() {
+        deliveryReceipt = true;
     }
 
      /** 
