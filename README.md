@@ -16,6 +16,7 @@ Please add the following dependency to your pom.xml file (version number should 
     <version>1.3</version>
     <type>jar</type>
 </dependency>
+```
 
 ## Authentication with FoneDynamicsClient
 
