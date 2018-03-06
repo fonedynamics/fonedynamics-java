@@ -4,10 +4,16 @@ JDK 1.7 client library for [Fone Dynamics](https://www.fonedynamics.com/) servic
 
 ## Installing the Fone Dynamics Client Library for Java
 
-Please download the jar file via this Url:
-https://goo.gl/XCeRsF
+The client library is available via the Maven Central Repository (https://repo.maven.apache.org/maven2/com/fonedynamics/fonedynamics-apiclient/).
 
-It will be available via the Central Repository very soon.
+Please add the following dependency to your pom.xml file (version number should usually be the latest available):
+
+<dependency>
+    <groupId>com.fonedynamics</groupId>
+    <artifactId>fonedynamics-apiclient</artifactId>
+    <version>1.3</version>
+    <type>jar</type>
+</dependency>
 
 ## Authentication with FoneDynamicsClient
 
@@ -51,7 +57,7 @@ System.out.printf("Sent message with MessageSid: %s From: %s To: %s Text: %s"
 
 ### Getting a message
 
-To get the details of a message that has been sent or received, use `MessageResource.Get()`.
+To get the details of a message that has been sent or received, use `MessageResource.get()`.
 
 ```java
 // get a message by its MessageSid
