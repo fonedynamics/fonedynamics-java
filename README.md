@@ -4,10 +4,12 @@ JDK 1.7 client library for [Fone Dynamics](https://www.fonedynamics.com/) servic
 
 ## Installing the Fone Dynamics Client Library for Java
 
-The client library is available via the Maven Central Repository (https://repo.maven.apache.org/maven2/com/fonedynamics/fonedynamics-apiclient/).
+The client library is available via the Maven Central Repository:
+https://repo.maven.apache.org/maven2/com/fonedynamics/fonedynamics-apiclient/
 
 Please add the following dependency to your pom.xml file (version number should usually be the latest available):
 
+```xml
 <dependency>
     <groupId>com.fonedynamics</groupId>
     <artifactId>fonedynamics-apiclient</artifactId>
