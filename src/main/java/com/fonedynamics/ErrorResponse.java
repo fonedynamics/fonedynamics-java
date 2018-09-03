@@ -2,6 +2,9 @@ package com.fonedynamics;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonParseException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /** 
  Represents an error resource.
@@ -38,8 +41,17 @@ class ErrorResponse
     {
         // deserialise response
         Gson gson = new GsonBuilder().create();
-        ErrorResponse error = gson.fromJson(response.GetContentString(), ErrorResponse.class);
-        // return exception
-        return new ApiException(response.getHttpStatusCode(), error.getResponseStatus().getErrorCode(), error.getResponseStatus().getMessage());
+        try
+        {
+            ErrorResponse error = gson.fromJson(response.GetContentString(), ErrorResponse.class);
+            // return exception
+            return new ApiException(response.getHttpStatusCode(), error.getResponseStatus().getErrorCode(), error.getResponseStatus().getMessage());
+        }
+        catch (JsonParseException ex)
+        {
+            // response did not contain JSON or it was malformed
+            Logger.getLogger(Request.class.getName()).log(Level.WARNING, null, ex);
+            return new ApiException(response.getHttpStatusCode(), "UNKNOWN_ERROR", "An error occured. Please retry the request.");
+        }
     }
 }
