@@ -51,7 +51,7 @@ class ErrorResponse
         {
             // response did not contain JSON or it was malformed
             Logger.getLogger(Request.class.getName()).log(Level.WARNING, null, ex);
-            return new ApiException(response.getHttpStatusCode(), "UNKNOWN_ERROR", "An error occured. Please retry the request.");
+            return new ApiException(response.getHttpStatusCode(), "UNKNOWN_ERROR", "An error occurred. Please retry the request.");
         }
     }
 }
